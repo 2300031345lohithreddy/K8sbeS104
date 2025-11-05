@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/products")
-@CrossOrigin
+@RequestMapping("/back1/api/products")
+@CrossOrigin(origins = "http://localhost:30082")
 public class ProductController {
 
     private final ProductRepository productRepository;

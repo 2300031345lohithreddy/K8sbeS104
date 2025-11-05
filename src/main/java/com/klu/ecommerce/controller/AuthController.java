@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/auth")
-@CrossOrigin
+@RequestMapping("/back1/auth")
+@CrossOrigin(origins = "http://localhost:30082")
 public class AuthController {
     private final UserService userService;
+    
 
     public AuthController(UserService userService) {
         this.userService = userService;
